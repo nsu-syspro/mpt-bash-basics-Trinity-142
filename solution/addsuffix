@@ -1,0 +1,15 @@
+#!/bin/bash
+suffix=$1
+for file in "${@:2}"; do
+    new="${file}${suffix}"
+    mv "$file" "$new"
+done
+
+
+
+
+
+
+
+
+
