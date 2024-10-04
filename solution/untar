@@ -1,0 +1,7 @@
+#!/bin/bash
+archive="$1"
+path="${archive}.unpacked"
+if [ ! -d "$path" ]; then
+    mkdir "$path"
+fi
+tar -xf "$archive" -C "$path"
